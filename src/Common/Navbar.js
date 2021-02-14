@@ -10,7 +10,7 @@ const navbar = (props) => {
   };
   const logout = async () => {
     await axios.get(
-      "http://localhost:5000/logout?c=" + document.cookie
+      "https://projectitbackend.herokuapp.com/logout?c=" + document.cookie
     ).then((res) => {
       console.log(document.cookie);
       document.cookie = "sessionCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";

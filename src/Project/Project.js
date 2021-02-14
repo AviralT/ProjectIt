@@ -10,7 +10,7 @@ class Project extends Component {
   };
 
   fetchDetails = async (projectId) => {
-    await fetch("http://localhost:5000/project/" + projectId, {
+    await fetch("https://projectitbackend.herokuapp.com/project/" + projectId, {
       method: "GET",
       mode: "cors",
     })

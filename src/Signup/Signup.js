@@ -27,7 +27,7 @@ class signupForm extends Component {
 
   checkUser = async () => {
     let userToCheck = this.state.userDetails.username;
-    await fetch("http://localhost:5000/checkUsername?username=" + userToCheck, {
+    await fetch("https://projectitbackend.herokuapp.com/checkUsername?username=" + userToCheck, {
       method: "GET",
       mode: "cors"
     }).then((response) => response.json())
@@ -62,7 +62,7 @@ class signupForm extends Component {
     let newState = {...this.state};
     newState.validated = true;
     this.setState(newState);
-    let url = "http://localhost:5000/signup?";
+    let url = "https://projectitbackend.herokuapp.com/signup?";
     url = url + "name=" + this.state.userDetails.name;
     url = url + "&username=" + this.state.userDetails.username;
     url = url + "&email=" + this.state.userDetails.email;

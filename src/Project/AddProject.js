@@ -35,7 +35,7 @@ class AddProject extends Component {
     newState.validated = true;
     this.setState(newState);
     let message = <div></div>;
-    let url = "http://localhost:5000/project/add?c=" + document.cookie;
+    let url = "https://projectitbackend.herokuapp.com/project/add?c=" + document.cookie;
     console.log(url);
     console.log(this.state);
     await fetch(url, {

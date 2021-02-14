@@ -13,7 +13,7 @@ class AllProjects extends Component {
   }
 
   fetchData = async field => {
-    let response = await fetch('http://localhost:5000/project/' + field + '/all', {
+    let response = await fetch('https://projectitbackend.herokuapp.com/project/' + field + '/all', {
       method: 'GET',
       mode: 'cors'
     }).then(response => response.json())

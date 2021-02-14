@@ -12,8 +12,8 @@ class Profile extends Component {
 
   fetchData = async () => {
     const username = this.props.match.params.username;
-    let url = "http://localhost:5000/user?c=" + document.cookie;
-    if (username) url = "http://localhost:5000/user/" + username;
+    let url = "https://projectitbackend.herokuapp.com/user?c=" + document.cookie;
+    if (username) url = "https://projectitbackend.herokuapp.com/user/" + username;
     await axios.get(url).then((res) => {
       this.setState({
         userDetails: res.data.userDetails,
