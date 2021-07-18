@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col">
             <h5>
               <i class="fab fa-linkedin-in"></i>
-              <a href="https://www.linkedin.com/in/vibhor-jain">
+              <a href="https://www.linkedin.com/in/vibhor-jain-18a372194/">
                 {" "}
                 Vibhor Jain{" "}
               </a>
